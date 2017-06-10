@@ -1,17 +1,7 @@
 # frozen_string_literal: true
 
 module ObjectModel
-  # describe laptops
-  class Laptop
-  end
-
-  # describe Linux friendly laptops
-  module LinuxFriendly
-    def fork_process
-      super
-    end
-  end
-
+  # describe desktop
   class Desktop
     def fork_process
       'Parent: allocate memory'
@@ -19,6 +9,17 @@ module ObjectModel
 
     def mine_bitcoins
       inspect
+    end
+  end
+
+  # describe laptops
+  class Laptop < Desktop
+  end
+
+  # describe Linux friendly laptops
+  module LinuxFriendly
+    def fork_process
+      super
     end
   end
 end
