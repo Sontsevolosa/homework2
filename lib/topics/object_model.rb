@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-# exercise object model
 module ObjectModel
+  # describe laptops
   class Laptop
   end
 
+  # describe Linux friendly laptops
   module LinuxFriendly
   end
 end
