@@ -10,5 +10,8 @@ module StateAndBehaviour
       @color = characteristics[:color]
       @model = characteristics[:model]
     end
+
+    def push_break
+    end
   end
 end
