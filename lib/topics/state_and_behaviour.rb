@@ -14,5 +14,8 @@ module StateAndBehaviour
 
     def push_break(speed)
     end
+
+    def default_car
+    end
   end
 end
