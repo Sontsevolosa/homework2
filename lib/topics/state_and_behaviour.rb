@@ -22,7 +22,7 @@ module StateAndBehaviour
       Car.new
     end
 
-    def speed_up
+    def speed_up(speed)
     end
   end
 end
