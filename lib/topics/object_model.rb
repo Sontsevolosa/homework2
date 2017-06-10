@@ -3,12 +3,19 @@
 module ObjectModel
   # describe laptops
   class Laptop
-    def fork_process
-      'Parent: allocate memory'
-    end
   end
 
   # describe Linux friendly laptops
   module LinuxFriendly
+  end
+
+  class Desktop
+    def fork_process
+      'Parent: allocate memory'
+    end
+
+    def mine_bitcoins
+      inspect
+    end
   end
 end
