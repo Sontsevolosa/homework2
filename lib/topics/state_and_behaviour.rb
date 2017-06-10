@@ -12,7 +12,7 @@ module StateAndBehaviour
       @current_speed = 160
     end
 
-    def push_break
+    def push_break(speed)
     end
   end
 end
