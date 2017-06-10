@@ -13,7 +13,9 @@ module StateAndBehaviour
     end
 
     def push_break(speed)
-      @current_speed -= speed
+      if @current_speed > speed
+        @current_speed -= speed
+      end
     end
 
     def self.default_car
