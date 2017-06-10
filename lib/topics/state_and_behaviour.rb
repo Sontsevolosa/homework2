@@ -23,6 +23,7 @@ module StateAndBehaviour
     end
 
     def speed_up(speed)
+      @current_speed = speed
     end
   end
 end
