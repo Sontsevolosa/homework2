@@ -4,4 +4,7 @@
 module ObjectModel
   class Laptop
   end
+
+  module LinuxFriendly
+  end
 end
