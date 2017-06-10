@@ -12,14 +12,15 @@ module ObjectModel
     end
   end
 
-  # describe laptops
-  class Laptop < Desktop
-  end
-
   # describe Linux friendly laptops
   module LinuxFriendly
     def fork_process
       super
     end
+  end
+  
+  # describe laptops
+  class Laptop < Desktop
+    prepend LinuxFriendly
   end
 end
