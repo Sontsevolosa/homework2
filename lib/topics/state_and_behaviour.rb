@@ -6,10 +6,10 @@ module StateAndBehaviour
     attr_accessor(:year, :color, :model, :current_speed)
 
     def initialize(characteristics)
-      characteristics[:year] ? @year = characteristics[:year] : '1970'
-      characteristics[:color] ? @color = characteristics[:color] : 'white'
-      characteristics[:model] ? @model = characteristics[:model] : 'Mustang'
-      @current_speed = 0
+      @year = characteristics[:year] || '1970'
+      @color = characteristics[:color] || 'white'
+      @model = characteristics[:model] || 'Mustang'
+      @current_speed = 160
     end
 
     def push_break(speed)
