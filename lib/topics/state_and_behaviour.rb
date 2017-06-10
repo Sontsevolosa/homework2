@@ -3,7 +3,7 @@
 # exercise state and behaviour
 module StateAndBehaviour
   class Car
-    attr_accessor(:year, :color, :model)
+    attr_accessor(:year, :color, :model, :current_speed)
 
     def initialize(characteristics)
       @year = characteristics[:year]
