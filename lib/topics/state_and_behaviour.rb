@@ -9,7 +9,7 @@ module StateAndBehaviour
       characteristics[:year] ? @year = characteristics[:year] : '1970'
       characteristics[:color] ? @color = characteristics[:color] : 'white'
       characteristics[:model] ? @model = characteristics[:model] : 'Mustang'
-      @current_speed = 160
+      @current_speed = 0
     end
 
     def push_break(speed)
