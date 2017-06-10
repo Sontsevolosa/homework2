@@ -3,6 +3,9 @@
 module ObjectModel
   # describe laptops
   class Laptop
+    def fork_process
+      'Parent: allocate memory'
+    end
   end
 
   # describe Linux friendly laptops
