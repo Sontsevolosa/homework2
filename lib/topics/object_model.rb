@@ -2,4 +2,6 @@
 
 # exercise object model
 module ObjectModel
+  class Laptop
+  end
 end
