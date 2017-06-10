@@ -3,10 +3,10 @@
 # exercise state and behaviour
 module StateAndBehaviour
   class Car
-    def initialize(year, color, model)
-      @year = year
-      @color = color
-      @model = model
+    def initialize(characteristics)
+      @year = characteristics[:year]
+      @color = characteristics[:color]
+      @model = characteristics[:model]
     end
   end
 end
