@@ -19,5 +19,8 @@ module StateAndBehaviour
     def self.default_car
       Car.new
     end
+
+    def speed_up
+    end
   end
 end
