@@ -3,21 +3,23 @@
 module StateAndBehaviour
   # describe cars
   class Car
-    attr_accessor(:year, :color, :model, :current_speed)
+    DEFAULT_YEAR = '1970'
 
-    def initialize(characteristics)
-      @year = characteristics[:year] || '1970'
-      @color = characteristics[:color] || 'white'
-      @model = characteristics[:model] || 'Mustang'
+    attr_reader :year, :color, :model, :current_speed
+
+    def self.default_car
+      Car.new
+    end
+
+    def initialize(car_options)
+      @year = car_options.fetch(:year, DEFAULT_YEAR)
+      @color = car_options.fetch(:color, 'white')
+      @model = car_options.fetch(:model, 'Mustang')
       @current_speed = 160
     end
 
     def push_break(speed)
       @current_speed -= speed if @current_speed > speed
-    end
-
-    def self.default_car
-      Car.new
     end
 
     def speed_up(speed)
