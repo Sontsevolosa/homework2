@@ -4,6 +4,9 @@ module StateAndBehaviour
   # describe cars
   class Car
     DEFAULT_YEAR = '1970'
+    DEFAULT_COLOR = 'white'
+    DEFAULT_MODEL = 'Mustang'
+    DEFAULT_SPEED = 160
 
     attr_reader :year, :color, :model, :current_speed
 
@@ -13,9 +16,9 @@ module StateAndBehaviour
 
     def initialize(car_options)
       @year = car_options.fetch(:year, DEFAULT_YEAR)
-      @color = car_options.fetch(:color, 'white')
-      @model = car_options.fetch(:model, 'Mustang')
-      @current_speed = 160
+      @color = car_options.fetch(:color, DEFAULT_COLOR)
+      @model = car_options.fetch(:model, DEFAULT_MODEL)
+      @current_speed = DEFAULT_SPEED
     end
 
     def push_break(speed)
